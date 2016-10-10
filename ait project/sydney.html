@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <script>
+         var calcWidth = function() {
+           $('#preview-frame').width($(window).width());
+         }
+
+         $(document).ready(function() {
+           calcWidth();
+         }); 
+
+         $(window).resize(function() {
+           calcWidth();
+         });
+      </script>
+
+<style>
+
+@media screen
+{
+ header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    width:100%	 
+    box-shadow:5px 5px 5px black;
+    height:80px;
+}
+}
+
+@media screen and (min-width:1000px)
+{
+  header {
+        background-color:grey;
+        box-shadow:5px 5px 5px black;
+}
+}
+
+@media print
+{
+ header {
+    background-color:black;
+    color:white;
+    text-align:left;
+    padding:8px;	 
+}
+}
+
+@media screen and (min-width:1000px)
+{
+ nav {
+ 
+    line-height:70px;
+    background-color:#eeeeee;
+    height:650px;
+    width:10%;
+    float:left;
+    padding:5px;
+    box-shadow:5px 5px 5px black;
+ 
+   	      
+}
+}
+
+
+@media screen and (min-width:1000px)
+{
+section {
+   
+    width:90%;
+    float:left;
+    padding:10px;	 	 
+}
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+    box-shadow:5px 5px 5px black;
+}
+
+aside {
+       
+   width:100%;
+   text-align:center;
+   box-shadow:5px 5px 5px black;
+}
+
+#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+      width: 1400px;
+}
+   
+
+.thumbnail {
+    float: left;
+    width: 110px;
+    height: 90px;
+    margin: 5px;
+}
+
+li:first-child
+	{
+	 color:red;
+	}
+
+li:last-child
+	{ 
+         color:green;
+	}
+
+li:nth-child(2n)
+        { 
+         color:blue;
+	}
+
+[class*="te"] 
+        {
+         background: yellow; 
+        }
+
+    @font-face
+ {
+  font-family: DeliciousRoman;
+  src: url(/Delicious-Roman.otf);
+ }
+
+
+h1.px {
+    font-family: DeliciousRoman; 
+    font-size:50px;
+    text-align:center;
+    text-shadow: 5px
+		 5px 
+		 10px 
+		 red;
+
+}
+
+h1.qx {
+    font-family: DeliciousRoman; 
+   
+  }
+
+
+
+.box {
+	margin:auto;
+	height:650px;
+	background:black;
+background: linear-gradient(red, orange);
+	color:white;
+	}
+
+
+
+p.ex{
+    width: 200px;
+    height: 40px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    transform: rotate(5deg);
+
+}
+
+p:hover {
+    width: 500px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+
+<header>
+
+<a href="index1.html">
+<img src="logo_head.jpg" width="250px" height="70px" align="left" />
+</a>
+
+
+<h1 class="px">Australia</h1>
+
+
+</header>
+
+
+
+<nav>
+
+<ol>
+
+
+ <li >
+ <a href="sydney.html" style="color:red">Sydney</a><br>
+ </li>
+
+
+  <li >
+  <a href="melbourne.html" style="color: rgb(0,0,255)"> Melbourne</a><br>
+  </li>
+
+
+
+  <li >
+  <a href="adelaide.html" style="color: #008000"> Adelaide</a><br>
+  </li>
+
+
+</ol>
+
+
+</nav>
+
+
+<article  >
+
+<section >
+
+<div class="first_test">
+
+
+<h1 class="qx">
+          Sydney
+</h1>
+
+</div>
+
+The area around Sydney has been inhabited by indigenous Australians for tens of millennia.[12] The first British settlers arrived in 1788 with Captain Arthur Phillip and founded Sydney as a penal colony.Successive colonial Governors assisted to transform the settlement into a thriving and independent metropolis. Since convict transportation ended in the mid 1800s the city has become a global cultural and economic centre.The population of Sydney at the time of the 2011 census was 4.39 million.[19] About 1.5 million of this total were born overseas and represent many different countries from around the world. There are more than 250 different languages spoken in Sydney and about one-third of residents speak a language other than English at home.
+
+
+
+</section>
+
+
+<aside class="box">
+<table >
+<tr>
+<td align="center" width="33%" ><img class="thumbnail" src="india.jpg" alt="London Bridge" style="width:75%;height:70%" align="middle"> 
+<td align="center" width="33%"><video height="25%"  width="100%" controls><source src="Top 10 Tourist Attractions in India.mp4">
+</table>
+
+
+
+</aside>
+
+
+
+</article>
+
+<footer>
+
+<center>
+<p class="ex">
+
+Copyright © SJ Tours & Travels
+
+</p>
+</center>
+
+</footer>
+
+<br>
+
+
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+

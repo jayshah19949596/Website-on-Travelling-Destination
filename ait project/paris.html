@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize()
+{
+var mapProp = {
+center:new google.maps.LatLng(51.508742,-0.120850),
+zoom:5,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+var map=new
+google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+         var calcWidth = function() {
+           $('#preview-frame').width($(window).width());
+         }
+
+         $(document).ready(function() {
+           calcWidth();
+         }); 
+
+         $(window).resize(function() {
+           calcWidth();
+         });
+
+      </script>
+
+<style>
+.animate {
+    height:50px;
+    width:100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example,rotate; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: example,rotate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;    
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:yellow; left:500px; top:0px;}
+    50%  {background-color:yellow; left:1000px; top:0px;}
+    75%  {background-color:yellow; left:500px; top:0px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+}
+
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:yellow; left:500px; top:0px;}
+    50%  {background-color:yellow; left:1000px; top:0px;}
+    75%  {background-color:yellow; left:500px; top:0px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+}
+
+
+@-webkit-keyframes rotate {
+0% { -webkit-transform: scale(1,1); }
+  35% { -webkit-transform: scale(2,1); } 
+  50% { -webkit-transform: scale(1,1); }
+  65% { -webkit-transform: scale(2,1); }
+  100% { -webkit-transform: scale(1,1); }
+
+
+}
+
+@media screen
+{
+ header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    width:100%	 
+    box-shadow:5px 5px 5px black;
+    height:80px;
+}
+}
+
+@media screen and (min-width:1000px)
+{
+  header {
+        background-color:grey;
+        box-shadow:5px 5px 5px black;
+}
+}
+
+@media print
+{
+ header {
+    background-color:black;
+    color:white;
+    text-align:left;
+    padding:8px;	 
+}
+}
+
+@media screen and (min-width:1000px)
+{
+ nav {
+ 
+    line-height:70px;
+    background-color:#eeeeee;
+    height:700px;
+    width:10%;
+    float:left;
+    padding:5px;
+    box-shadow:5px 5px 5px black;
+ 
+   	      
+}
+}
+
+
+@media screen and (min-width:1000px)
+{
+section {
+   
+    width:90%;
+    float:left;
+    padding:10px;
+    height;auto;	 	 
+}
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+    box-shadow:5px 5px 5px black;
+}
+
+aside {
+       
+   width:100%;
+   height:auto;
+   text-align:center;
+   box-shadow:5px 5px 5px black;
+}
+
+#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+      width: 1400px;
+}
+   
+
+.thumbnail {
+    float: left;
+    width: 110px;
+    height: 90px;
+    margin: 5px;
+}
+
+li:first-child
+	{
+	 color:red;
+	}
+
+li:last-child
+	{ 
+         color:green;
+	}
+
+li:nth-child(2n)
+        { 
+         color:blue;
+	}
+
+[class*="te"] 
+        {
+         background: yellow; 
+        }
+
+    @font-face
+ {
+  font-family: DeliciousRoman;
+  src: url(/Delicious-Roman.otf);
+ }
+
+
+h1.px {
+    font-family: DeliciousRoman; 
+    font-size:50px;
+    text-align:center;
+    text-shadow: 5px
+		 5px 
+		 10px 
+		 red;
+
+}
+
+h1.qx {
+    font-family: DeliciousRoman; 
+   
+  }
+
+
+
+.box {
+	margin:auto;
+	height:700px;
+	background:black;
+background: linear-gradient(red, orange);
+	color:white;
+	}
+
+
+
+p.ex{
+    width: 200px;
+    height: 40px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    transform: rotate(5deg);
+
+}
+
+p:hover {
+    width: 500px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+
+
+<header>
+
+<a href="index1.html">
+<img src="logo_head.jpg" width="250px" height="70px" align="left" />
+</a>
+
+
+<h1 class="px">Europe</h1>
+
+
+</header>
+
+
+
+<nav>
+
+<ol>
+
+
+ <li >
+ <a href="london.html" style="color:red">London</a><br>
+ </li>
+
+
+  <li >
+  <a href="paris.html" style="color: rgb(0,0,255)"> Paris</a><br>
+  </li>
+
+
+
+  <li >
+  <a href="italy.html" style="color: #008000"> Italy</a><br>
+  </li>
+
+
+</ol>
+
+
+</nav>
+
+
+<article  >
+
+<section >
+
+<div class="first_test">
+<div class="animate">
+<h1 class="qx">
+          Paris
+</h1>
+</div>
+
+</div>
+
+Paris is the capital and most populous city of France. Situated on the Seine River, in the north of the country, it is in the centre of the Île-de-France region, also known as the région parisienne, "Paris region".Paris's urban area is the most populous in the European Union, and third most populous in Europe, behind Moscow and Istanbul.
+</section>
+
+
+<aside class="box">
+<table >
+<tr>
+<td align="center" width="33%" ><img class="thumbnail" src="paris.jpg" alt="London Bridge" style="width:75%;height:30%" align="middle"> 
+<td align="center" width="33%"><video height="60%"  width="100%" controls><source src="Top 10 Attractions London - UK Travel Guide.mp4" type="video/mp4">
+</tr>
+</table>
+
+<br>
+<br>
+
+<center>
+<div id="googleMap" style="width:950px;height:200px;"></div></td>
+</center>
+
+</aside>
+
+
+
+</article>
+
+<footer>
+
+<center>
+<p class="ex">
+
+Copyright © SJ Tours & Travels
+
+</p>
+</center>
+
+</footer>
+
+<br>
+
+
+
+
+</div>
+par
+
+</body>
+</html>
+
+
+
+
